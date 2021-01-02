@@ -36,7 +36,10 @@ const TextInfoContent = ({
       >
         {heading}
       </Typography>
-      <Typography {...bodyProps} className={cx(css.body, bodyProps.className)}>
+      <Typography 
+       component={'div'}
+       {...bodyProps} 
+       className={cx(css.body, bodyProps.className)}>
         {body}
       </Typography>
     </>
